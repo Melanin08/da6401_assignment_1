@@ -64,5 +64,3 @@ if __name__ == "__main__":
     print("Run the following command to start the sweep:")
     print(f"wandb agent {sweep_id}")
 
-    # Uncomment to run sweep automatically
-    # wandb.agent(sweep_id, sweep_agent, count=50)
