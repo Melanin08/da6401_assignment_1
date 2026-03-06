@@ -1,0 +1,48 @@
+_wandb:
+    value:
+        cli_version: 0.25.0
+        e:
+            9qhvmhmz0o2svrh0174tmwgze50dytgy:
+                codePath: src\data_exploration.py
+                codePathLocal: src\data_exploration.py
+                cpu_count: 4
+                cpu_count_logical: 8
+                disk:
+                    /:
+                        total: "254231441408"
+                        used: "246237450240"
+                email: ge26z814@smail.iitm.ac.in
+                executable: C:\Users\Admin\AppData\Local\Programs\Python\Python310\python.exe
+                git:
+                    commit: c0eb1b7e8940f7b2e4922c4913343ca8c8ed32e3
+                    remote: https://github.com/Melanin08/da6401_assignment_1.git
+                host: DESKTOP-DF1C1CV
+                memory:
+                    total: "8211902464"
+                os: Windows-10-10.0.26200-SP0
+                program: C:\Users\Admin\Documents\da6401_assignment_1\src\data_exploration.py
+                python: CPython 3.10.5
+                root: C:\Users\Admin\Documents\da6401_assignment_1
+                startedAt: "2026-03-06T14:33:54.267062Z"
+                writerId: 9qhvmhmz0o2svrh0174tmwgze50dytgy
+        m: []
+        python_version: 3.10.5
+        t:
+            "1":
+                - 2
+                - 3
+                - 5
+                - 53
+            "2":
+                - 2
+                - 3
+                - 5
+                - 53
+            "3":
+                - 2
+            "4": 3.10.5
+            "5": 0.25.0
+            "8":
+                - 3
+            "12": 0.25.0
+            "13": windows-amd64

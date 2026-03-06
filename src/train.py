@@ -92,7 +92,7 @@ def parse_arguments():
     )
 
     parser.add_argument(
-        "-w_i", "--weight_init",
+        "-wi", "--weight_init",
         type=str,
         default="xavier",
         choices=["random", "xavier"],

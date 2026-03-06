@@ -1,33 +1,68 @@
-import os
-import random
+"""
+Hyperparameter Sweep Script
+Uses W&B Sweeps for systematic hyperparameter search
+"""
+import wandb
+from train import main as train_main
+import argparse
 
-datasets = ["mnist"]
-optimizers = ["sgd", "momentum", "nag", "rmsprop"]
-activations = ["relu", "sigmoid", "tanh"]
-learning_rates = [0.01, 0.001, 0.0005]
-batch_sizes = [32, 64, 128]
+def sweep_agent():
+    """Run sweep agent"""
+    # Initialize wandb with sweep config
+    wandb.init()
 
-hidden_configs = [
-    "64 64",
-    "128 128",
-    "128 128 128"
-]
+    # Convert wandb config to argparse format
+    args = argparse.Namespace()
 
-weight_inits = ["random", "xavier"]  
+    # Map wandb config to args
+    config = wandb.config
+    args.dataset = config.dataset
+    args.epochs = config.epochs
+    args.batch_size = config.batch_size
+    args.learning_rate = config.learning_rate
+    args.weight_decay = config.weight_decay
+    args.optimizer = config.optimizer
+    args.num_layers = config.num_layers
+    args.hidden_size = config.hidden_size
+    args.activation = config.activation
+    args.loss = config.loss
+    args.weight_init = config.weight_init
+    args.wandb_project = "da6401-assignment"
+    args.model_save_path = f"models/sweep_model_{wandb.run.name}.npy"
 
-runs = 100
+    # Run training
+    try:
+        train_main(args)
+    except Exception as e:
+        print(f"Sweep run failed: {e}")
+        wandb.log({"sweep_error": str(e)})
 
-for i in range(runs):
+if __name__ == "__main__":
+    # Define sweep configuration
+    sweep_config = {
+        'method': 'random',
+        'metric': {'name': 'val_accuracy', 'goal': 'maximize'},
+        'parameters': {
+            'dataset': {'values': ['mnist']},
+            'epochs': {'values': [5, 10]},
+            'batch_size': {'values': [32, 64, 128]},
+            'learning_rate': {'values': [0.001, 0.01, 0.1]},
+            'weight_decay': {'values': [0.0, 0.0001]},
+            'optimizer': {'values': ['sgd', 'momentum', 'nag', 'rmsprop']},
+            'num_layers': {'values': [1, 2, 3]},
+            'hidden_size': {'values': [[64], [128, 64], [128, 128, 64]]},
+            'activation': {'values': ['relu', 'sigmoid', 'tanh']},
+            'loss': {'values': ['cross_entropy']},
+            'weight_init': {'values': ['random', 'xavier']}
+        }
+    }
 
-    dataset = random.choice(datasets)
-    optimizer = random.choice(optimizers)
-    activation = random.choice(activations)
-    lr = random.choice(learning_rates)
-    batch = random.choice(batch_sizes)
-    hidden = random.choice(hidden_configs)
-    init = random.choice(weight_inits)   
+    # Create sweep
+    sweep_id = wandb.sweep(sweep_config, project="da6401-assignment")
 
-    cmd = f"python train.py -d {dataset} -e 5 -b {batch} -lr {lr} -o {optimizer} -a {activation} -sz {hidden} -l cross_entropy -w_i {init}"
+    print(f"Sweep created: {sweep_id}")
+    print("Run the following command to start the sweep:")
+    print(f"wandb agent {sweep_id}")
 
-    print("Running:", cmd)
-    os.system(cmd)
+    # Uncomment to run sweep automatically
+    # wandb.agent(sweep_id, sweep_agent, count=50)

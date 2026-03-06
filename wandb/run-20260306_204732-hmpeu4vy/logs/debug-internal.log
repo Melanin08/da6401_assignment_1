@@ -1,0 +1,12 @@
+{"time":"2026-03-06T20:47:35.2471344+05:30","level":"INFO","msg":"stream: starting","core version":"0.25.0"}
+{"time":"2026-03-06T20:47:35.7722727+05:30","level":"INFO","msg":"stream: created new stream","id":"hmpeu4vy"}
+{"time":"2026-03-06T20:47:35.7727922+05:30","level":"INFO","msg":"handler: started","stream_id":"hmpeu4vy"}
+{"time":"2026-03-06T20:47:35.7733175+05:30","level":"INFO","msg":"stream: started","id":"hmpeu4vy"}
+{"time":"2026-03-06T20:47:35.7738402+05:30","level":"INFO","msg":"sender: started","stream_id":"hmpeu4vy"}
+{"time":"2026-03-06T20:47:35.7738402+05:30","level":"INFO","msg":"writer: started","stream_id":"hmpeu4vy"}
+{"time":"2026-03-06T20:48:40.8373571+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-03-06T20:48:41.3890571+05:30","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2026-03-06T20:48:41.5459618+05:30","level":"INFO","msg":"stream: closing","id":"hmpeu4vy"}
+{"time":"2026-03-06T20:48:41.5597125+05:30","level":"INFO","msg":"handler: closed","stream_id":"hmpeu4vy"}
+{"time":"2026-03-06T20:48:41.5602719+05:30","level":"INFO","msg":"sender: closed","stream_id":"hmpeu4vy"}
+{"time":"2026-03-06T20:48:41.5602719+05:30","level":"INFO","msg":"stream: closed","id":"hmpeu4vy"}

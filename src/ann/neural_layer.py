@@ -59,5 +59,5 @@ class DenseLayer:
         return dL_dX
     
     def update_weights(self, dW, db):
-        self.W -= dW
-        self.b -= db
+        self.W += dW
+        self.b += db

@@ -1,0 +1,14 @@
+{"time":"2026-03-06T17:51:15.0965524+05:30","level":"INFO","msg":"stream: starting","core version":"0.25.0"}
+{"time":"2026-03-06T17:51:33.1165491+05:30","level":"INFO","msg":"stream: created new stream","id":"86bmh1t3"}
+{"time":"2026-03-06T17:51:33.1181679+05:30","level":"INFO","msg":"handler: started","stream_id":"86bmh1t3"}
+{"time":"2026-03-06T17:51:33.1197299+05:30","level":"INFO","msg":"stream: started","id":"86bmh1t3"}
+{"time":"2026-03-06T17:51:33.1202579+05:30","level":"INFO","msg":"writer: started","stream_id":"86bmh1t3"}
+{"time":"2026-03-06T17:51:33.1202579+05:30","level":"INFO","msg":"sender: started","stream_id":"86bmh1t3"}
+{"time":"2026-03-06T17:52:03.1433183+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2026-03-06T17:52:18.4674961+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": read tcp 10.229.21.139:64550->35.186.228.49:443: wsarecv: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond."}
+{"time":"2026-03-06T17:52:43.2795738+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-03-06T17:52:43.8691853+05:30","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2026-03-06T17:52:43.8777492+05:30","level":"INFO","msg":"stream: closing","id":"86bmh1t3"}
+{"time":"2026-03-06T17:52:43.878256+05:30","level":"INFO","msg":"handler: closed","stream_id":"86bmh1t3"}
+{"time":"2026-03-06T17:52:43.8787766+05:30","level":"INFO","msg":"sender: closed","stream_id":"86bmh1t3"}
+{"time":"2026-03-06T17:52:43.8787766+05:30","level":"INFO","msg":"stream: closed","id":"86bmh1t3"}

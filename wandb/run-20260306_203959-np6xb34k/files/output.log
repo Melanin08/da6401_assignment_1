@@ -1,0 +1,20 @@
+Loading mnist dataset...
+Train shape: (54000, 784), Val shape: (6000, 784), Test shape: (10000, 784)
+Creating model with 2 hidden layers...
+Starting training with rmsprop optimizer for 10 epochs...
+Epoch [1/10] - Train Loss: 0.3262, Train Acc: 0.9108, Val Loss: 0.2464, Val Acc: 0.9398
+Epoch [2/10] - Train Loss: 0.2068, Train Acc: 0.9513, Val Loss: 0.2775, Val Acc: 0.9412
+Epoch [3/10] - Train Loss: 0.1968, Train Acc: 0.9556, Val Loss: 0.2800, Val Acc: 0.9512
+Epoch [4/10] - Train Loss: 0.1917, Train Acc: 0.9588, Val Loss: 0.3111, Val Acc: 0.9488
+Epoch [5/10] - Train Loss: 0.1864, Train Acc: 0.9619, Val Loss: 0.2937, Val Acc: 0.9480
+Epoch [6/10] - Train Loss: 0.1832, Train Acc: 0.9632, Val Loss: 0.3202, Val Acc: 0.9542
+Epoch [7/10] - Train Loss: 0.1932, Train Acc: 0.9624, Val Loss: 0.2715, Val Acc: 0.9548
+Epoch [8/10] - Train Loss: 0.1935, Train Acc: 0.9630, Val Loss: 0.3692, Val Acc: 0.9480
+Epoch [9/10] - Train Loss: 0.1857, Train Acc: 0.9650, Val Loss: 0.2977, Val Acc: 0.9512
+Epoch [10/10] - Train Loss: 0.2001, Train Acc: 0.9635, Val Loss: 0.2936, Val Acc: 0.9472
+
+Evaluating on test set...
+Test Accuracy: 0.9487
+
+Model saved to best_model.npy
+Config saved to best_model_config.json

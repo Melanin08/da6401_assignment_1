@@ -1,0 +1,28 @@
+{
+  "os":  "Windows-10-10.0.26200-SP0",
+  "python":  "CPython 3.10.5",
+  "startedAt":  "2026-03-06T08:21:57.101509Z",
+  "program":  "C:\\Users\\Admin\\Documents\\da6401_assignment_1\\src\\data_exploration.py",
+  "codePath":  "src\\data_exploration.py",
+  "codePathLocal":  "data_exploration.py",
+  "git":  {
+    "remote":  "https://github.com/MiRL-IITM/da6401_assignment_1",
+    "commit":  "c0eb1b7e8940f7b2e4922c4913343ca8c8ed32e3"
+  },
+  "email":  "ge26z814@smail.iitm.ac.in",
+  "root":  "C:\\Users\\Admin\\Documents\\da6401_assignment_1\\src",
+  "host":  "DESKTOP-DF1C1CV",
+  "executable":  "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+  "cpu_count":  4,
+  "cpu_count_logical":  8,
+  "disk":  {
+    "/":  {
+      "total":  "254231441408",
+      "used":  "235617099776"
+    }
+  },
+  "memory":  {
+    "total":  "8211902464"
+  },
+  "writerId":  "m5d6d6xgapvrrt0gy1dfl5el5efca6mi"
+}
