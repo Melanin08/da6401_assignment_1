@@ -1,0 +1,12 @@
+{"time":"2026-03-06T01:44:15.8728214+05:30","level":"INFO","msg":"stream: starting","core version":"0.25.0"}
+{"time":"2026-03-06T01:44:16.4538919+05:30","level":"INFO","msg":"stream: created new stream","id":"ii4ap4zi"}
+{"time":"2026-03-06T01:44:16.4544386+05:30","level":"INFO","msg":"handler: started","stream_id":"ii4ap4zi"}
+{"time":"2026-03-06T01:44:16.4549643+05:30","level":"INFO","msg":"stream: started","id":"ii4ap4zi"}
+{"time":"2026-03-06T01:44:16.4549643+05:30","level":"INFO","msg":"writer: started","stream_id":"ii4ap4zi"}
+{"time":"2026-03-06T01:44:16.4549643+05:30","level":"INFO","msg":"sender: started","stream_id":"ii4ap4zi"}
+{"time":"2026-03-06T01:44:57.8227785+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-03-06T01:44:58.4707088+05:30","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2026-03-06T01:44:58.4844756+05:30","level":"INFO","msg":"stream: closing","id":"ii4ap4zi"}
+{"time":"2026-03-06T01:44:58.4844756+05:30","level":"INFO","msg":"handler: closed","stream_id":"ii4ap4zi"}
+{"time":"2026-03-06T01:44:58.4855642+05:30","level":"INFO","msg":"sender: closed","stream_id":"ii4ap4zi"}
+{"time":"2026-03-06T01:44:58.4855642+05:30","level":"INFO","msg":"stream: closed","id":"ii4ap4zi"}

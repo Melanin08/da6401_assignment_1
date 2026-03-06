@@ -1,0 +1,23 @@
+{
+    "dataset": "mnist",
+    "epochs": 5,
+    "batch_size": 32,
+    "learning_rate": 0.0005,
+    "weight_decay": 0.0,
+    "optimizer": "sgd",
+    "num_layers": 2,
+    "hidden_size": [
+        128,
+        128
+    ],
+    "activation": "tanh",
+    "loss": "cross_entropy",
+    "weight_init": "random",
+    "wandb_project": "da6401-assignment",
+    "model_save_path": "best_model.npy",
+    "test_accuracy": 0.0767,
+    "hidden_layers": [
+        128,
+        128
+    ]
+}

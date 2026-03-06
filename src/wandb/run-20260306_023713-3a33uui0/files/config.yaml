@@ -1,0 +1,100 @@
+_wandb:
+    value:
+        cli_version: 0.25.0
+        e:
+            76u1httfmdot63fh9i85xqpxu7q1rke9:
+                args:
+                    - -d
+                    - mnist
+                    - -e
+                    - "5"
+                    - -b
+                    - "32"
+                    - -lr
+                    - "0.001"
+                    - -o
+                    - momentum
+                    - -a
+                    - sigmoid
+                    - -sz
+                    - "128"
+                    - "128"
+                    - "128"
+                    - -l
+                    - cross_entropy
+                    - -w_i
+                    - xavier
+                codePath: src\train.py
+                codePathLocal: train.py
+                cpu_count: 4
+                cpu_count_logical: 8
+                disk:
+                    /:
+                        total: "254231441408"
+                        used: "243725828096"
+                email: ge26z814@smail.iitm.ac.in
+                executable: C:\Users\Admin\AppData\Local\Programs\Python\Python310\python.exe
+                git:
+                    commit: 671b6914588cc2eaaa0e82e93c7f132e34a2b5a6
+                    remote: https://github.com/MiRL-IITM/da6401_assignment_1
+                host: DESKTOP-DF1C1CV
+                memory:
+                    total: "8211902464"
+                os: Windows-10-10.0.26200-SP0
+                program: C:\Users\Admin\Documents\da6401_assignment_1\src\train.py
+                python: CPython 3.10.5
+                root: C:\Users\Admin\Documents\da6401_assignment_1\src
+                startedAt: "2026-03-05T21:07:13.189921Z"
+                writerId: 76u1httfmdot63fh9i85xqpxu7q1rke9
+        m: []
+        python_version: 3.10.5
+        t:
+            "1":
+                - 2
+                - 3
+                - 5
+                - 53
+            "2":
+                - 2
+                - 3
+                - 5
+                - 53
+            "3":
+                - 2
+                - 16
+                - 17
+            "4": 3.10.5
+            "5": 0.25.0
+            "8":
+                - 3
+            "12": 0.25.0
+            "13": windows-amd64
+activation:
+    value: sigmoid
+batch_size:
+    value: 32
+dataset:
+    value: mnist
+epochs:
+    value: 5
+hidden_size:
+    value:
+        - 128
+        - 128
+        - 128
+learning_rate:
+    value: 0.001
+loss:
+    value: cross_entropy
+model_save_path:
+    value: best_model.npy
+num_layers:
+    value: 2
+optimizer:
+    value: momentum
+wandb_project:
+    value: da6401-assignment
+weight_decay:
+    value: 0
+weight_init:
+    value: xavier

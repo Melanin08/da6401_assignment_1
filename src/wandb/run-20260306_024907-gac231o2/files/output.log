@@ -1,0 +1,15 @@
+Loading mnist dataset...
+Train shape: (54000, 784), Val shape: (6000, 784), Test shape: (10000, 784)
+Creating model with 2 hidden layers...
+Starting training with sgd optimizer for 5 epochs...
+Epoch [1/5] - Train Loss: 2.3030, Train Acc: 0.1124, Val Loss: 2.3031, Val Acc: 0.1123
+Epoch [2/5] - Train Loss: 2.3032, Train Acc: 0.0927, Val Loss: 2.3033, Val Acc: 0.0903
+Epoch [3/5] - Train Loss: 2.3034, Train Acc: 0.0903, Val Loss: 2.3035, Val Acc: 0.0903
+Epoch [4/5] - Train Loss: 2.3036, Train Acc: 0.0904, Val Loss: 2.3037, Val Acc: 0.0903
+Epoch [5/5] - Train Loss: 2.3038, Train Acc: 0.0903, Val Loss: 2.3040, Val Acc: 0.0903
+
+Evaluating on test set...
+Test Accuracy: 0.0892
+
+Model saved to best_model.npy
+Config saved to best_model_config.json

@@ -1,0 +1,12 @@
+{"time":"2026-03-06T02:43:39.9090919+05:30","level":"INFO","msg":"stream: starting","core version":"0.25.0"}
+{"time":"2026-03-06T02:43:40.4909171+05:30","level":"INFO","msg":"stream: created new stream","id":"sumejxlm"}
+{"time":"2026-03-06T02:43:40.4909171+05:30","level":"INFO","msg":"handler: started","stream_id":"sumejxlm"}
+{"time":"2026-03-06T02:43:40.4939052+05:30","level":"INFO","msg":"stream: started","id":"sumejxlm"}
+{"time":"2026-03-06T02:43:40.4939052+05:30","level":"INFO","msg":"writer: started","stream_id":"sumejxlm"}
+{"time":"2026-03-06T02:43:40.4944222+05:30","level":"INFO","msg":"sender: started","stream_id":"sumejxlm"}
+{"time":"2026-03-06T02:43:53.5848953+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-03-06T02:43:54.4537763+05:30","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2026-03-06T02:43:54.4623936+05:30","level":"INFO","msg":"stream: closing","id":"sumejxlm"}
+{"time":"2026-03-06T02:43:54.4623936+05:30","level":"INFO","msg":"handler: closed","stream_id":"sumejxlm"}
+{"time":"2026-03-06T02:43:54.4641059+05:30","level":"INFO","msg":"sender: closed","stream_id":"sumejxlm"}
+{"time":"2026-03-06T02:43:54.4641059+05:30","level":"INFO","msg":"stream: closed","id":"sumejxlm"}

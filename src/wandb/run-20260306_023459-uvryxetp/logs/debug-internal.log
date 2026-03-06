@@ -1,0 +1,12 @@
+{"time":"2026-03-06T02:35:02.0892874+05:30","level":"INFO","msg":"stream: starting","core version":"0.25.0"}
+{"time":"2026-03-06T02:35:02.9555035+05:30","level":"INFO","msg":"stream: created new stream","id":"uvryxetp"}
+{"time":"2026-03-06T02:35:02.9560977+05:30","level":"INFO","msg":"handler: started","stream_id":"uvryxetp"}
+{"time":"2026-03-06T02:35:02.9566222+05:30","level":"INFO","msg":"stream: started","id":"uvryxetp"}
+{"time":"2026-03-06T02:35:02.9566222+05:30","level":"INFO","msg":"writer: started","stream_id":"uvryxetp"}
+{"time":"2026-03-06T02:35:02.9566222+05:30","level":"INFO","msg":"sender: started","stream_id":"uvryxetp"}
+{"time":"2026-03-06T02:35:17.7364894+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-03-06T02:35:18.9732465+05:30","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2026-03-06T02:35:19.0307602+05:30","level":"INFO","msg":"stream: closing","id":"uvryxetp"}
+{"time":"2026-03-06T02:35:19.0307602+05:30","level":"INFO","msg":"handler: closed","stream_id":"uvryxetp"}
+{"time":"2026-03-06T02:35:19.0651991+05:30","level":"INFO","msg":"sender: closed","stream_id":"uvryxetp"}
+{"time":"2026-03-06T02:35:19.0651991+05:30","level":"INFO","msg":"stream: closed","id":"uvryxetp"}

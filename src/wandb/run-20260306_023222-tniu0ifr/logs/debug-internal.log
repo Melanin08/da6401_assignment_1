@@ -1,0 +1,12 @@
+{"time":"2026-03-06T02:32:25.3219095+05:30","level":"INFO","msg":"stream: starting","core version":"0.25.0"}
+{"time":"2026-03-06T02:32:26.141526+05:30","level":"INFO","msg":"stream: created new stream","id":"tniu0ifr"}
+{"time":"2026-03-06T02:32:26.141526+05:30","level":"INFO","msg":"handler: started","stream_id":"tniu0ifr"}
+{"time":"2026-03-06T02:32:26.1421574+05:30","level":"INFO","msg":"stream: started","id":"tniu0ifr"}
+{"time":"2026-03-06T02:32:26.1421574+05:30","level":"INFO","msg":"writer: started","stream_id":"tniu0ifr"}
+{"time":"2026-03-06T02:32:26.1421574+05:30","level":"INFO","msg":"sender: started","stream_id":"tniu0ifr"}
+{"time":"2026-03-06T02:32:39.2758185+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-03-06T02:32:39.9210319+05:30","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2026-03-06T02:32:39.9290251+05:30","level":"INFO","msg":"stream: closing","id":"tniu0ifr"}
+{"time":"2026-03-06T02:32:39.9290251+05:30","level":"INFO","msg":"handler: closed","stream_id":"tniu0ifr"}
+{"time":"2026-03-06T02:32:39.9295646+05:30","level":"INFO","msg":"sender: closed","stream_id":"tniu0ifr"}
+{"time":"2026-03-06T02:32:39.9295646+05:30","level":"INFO","msg":"stream: closed","id":"tniu0ifr"}
