@@ -4,6 +4,8 @@ Evaluate trained models on test sets
 """
 
 import argparse
+import json
+import os
 import numpy as np
 
 from ann.neural_network import NeuralNetwork
@@ -16,8 +18,8 @@ def parse_arguments():
     """
     parser = argparse.ArgumentParser(description="Run inference on test set")
 
-    parser.add_argument("--model_path", type=str, required=True)
-    parser.add_argument("-d", "--dataset", type=str, required=True, choices=["mnist", "fashion_mnist"])
+    parser.add_argument("--model_path", type=str, default="src/best_model.npy")
+    parser.add_argument("-d", "--dataset", type=str, default=None, choices=["mnist", "fashion_mnist"])
     parser.add_argument("-b", "--batch_size", type=int, default=256)
     parser.add_argument("-a", "--activation", type=str, default=None)
     parser.add_argument("-nhl", "--hidden_layers", nargs="*", type=int, default=None)
@@ -53,6 +55,18 @@ def precision_recall_f1_macro(y_true, y_pred, num_classes=10):
     return float(np.mean(precisions)), float(np.mean(recalls)), float(np.mean(f1s))
 
 
+def infer_dataset_from_model(model_path):
+    """
+    Try to infer dataset from saved model config.
+    """
+    if not os.path.exists(model_path):
+        return "mnist"
+
+    payload = np.load(model_path, allow_pickle=True).item()
+    config = payload.get("config", {})
+    return config.get("dataset", "mnist")
+
+
 def evaluate_model(model, X_test, y_test):
     """
     Evaluate model on test data.
@@ -80,6 +94,9 @@ def main():
     Main inference function.
     """
     args = parse_arguments()
+
+    if args.dataset is None:
+        args.dataset = infer_dataset_from_model(args.model_path)
 
     _, _, X_test, y_test = load_data(args.dataset)
     model = load_model(args.model_path)

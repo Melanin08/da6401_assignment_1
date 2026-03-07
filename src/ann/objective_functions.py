@@ -24,8 +24,8 @@ def mse_loss(predictions, y_true):
 
 
 def mse_grad(predictions, y_true):
-    batch_size = y_true.shape[0]
-    return 2.0 * (predictions - y_true) / batch_size
+    # because mse_loss uses np.mean over all elements
+    return 2.0 * (predictions - y_true) / predictions.size
 
 
 def get_loss(name):
