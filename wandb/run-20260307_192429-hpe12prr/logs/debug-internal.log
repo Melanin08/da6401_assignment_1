@@ -1,0 +1,12 @@
+{"time":"2026-03-07T19:24:29.1813494+05:30","level":"INFO","msg":"stream: starting","core version":"0.25.0"}
+{"time":"2026-03-07T19:24:29.6441262+05:30","level":"INFO","msg":"stream: created new stream","id":"hpe12prr"}
+{"time":"2026-03-07T19:24:29.6441262+05:30","level":"INFO","msg":"handler: started","stream_id":"hpe12prr"}
+{"time":"2026-03-07T19:24:29.6446315+05:30","level":"INFO","msg":"stream: started","id":"hpe12prr"}
+{"time":"2026-03-07T19:24:29.6446315+05:30","level":"INFO","msg":"writer: started","stream_id":"hpe12prr"}
+{"time":"2026-03-07T19:24:29.6446315+05:30","level":"INFO","msg":"sender: started","stream_id":"hpe12prr"}
+{"time":"2026-03-07T19:25:01.7397616+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-03-07T19:25:02.3897944+05:30","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2026-03-07T19:25:02.396652+05:30","level":"INFO","msg":"stream: closing","id":"hpe12prr"}
+{"time":"2026-03-07T19:25:02.396652+05:30","level":"INFO","msg":"handler: closed","stream_id":"hpe12prr"}
+{"time":"2026-03-07T19:25:02.3971592+05:30","level":"INFO","msg":"sender: closed","stream_id":"hpe12prr"}
+{"time":"2026-03-07T19:25:02.3971592+05:30","level":"INFO","msg":"stream: closed","id":"hpe12prr"}

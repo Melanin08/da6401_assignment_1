@@ -1,0 +1,6 @@
+Epoch 1/5 | Train Acc: 0.772259 | Val Acc: 0.778000 | Test Acc: 0.787700 | Test F1: 0.776195
+Epoch 2/5 | Train Acc: 0.835389 | Val Acc: 0.841000 | Test Acc: 0.847600 | Test F1: 0.843411
+Epoch 3/5 | Train Acc: 0.859537 | Val Acc: 0.860000 | Test Acc: 0.868600 | Test F1: 0.866099
+Epoch 4/5 | Train Acc: 0.872167 | Val Acc: 0.873500 | Test Acc: 0.880700 | Test F1: 0.878510
+Epoch 5/5 | Train Acc: 0.880000 | Val Acc: 0.881000 | Test Acc: 0.888800 | Test F1: 0.886796
+Training complete!

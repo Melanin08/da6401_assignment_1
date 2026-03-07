@@ -1,0 +1,12 @@
+{"time":"2026-03-07T16:20:12.2643181+05:30","level":"INFO","msg":"stream: starting","core version":"0.25.0"}
+{"time":"2026-03-07T16:20:12.8873254+05:30","level":"INFO","msg":"stream: created new stream","id":"y3mvliso"}
+{"time":"2026-03-07T16:20:12.8878435+05:30","level":"INFO","msg":"handler: started","stream_id":"y3mvliso"}
+{"time":"2026-03-07T16:20:12.8884977+05:30","level":"INFO","msg":"stream: started","id":"y3mvliso"}
+{"time":"2026-03-07T16:20:12.8884977+05:30","level":"INFO","msg":"writer: started","stream_id":"y3mvliso"}
+{"time":"2026-03-07T16:20:12.8884977+05:30","level":"INFO","msg":"sender: started","stream_id":"y3mvliso"}
+{"time":"2026-03-07T16:20:26.4803322+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-03-07T16:20:26.9655205+05:30","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2026-03-07T16:20:26.9721907+05:30","level":"INFO","msg":"stream: closing","id":"y3mvliso"}
+{"time":"2026-03-07T16:20:26.9721907+05:30","level":"INFO","msg":"handler: closed","stream_id":"y3mvliso"}
+{"time":"2026-03-07T16:20:26.9726951+05:30","level":"INFO","msg":"sender: closed","stream_id":"y3mvliso"}
+{"time":"2026-03-07T16:20:26.9726951+05:30","level":"INFO","msg":"stream: closed","id":"y3mvliso"}

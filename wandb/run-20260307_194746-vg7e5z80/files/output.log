@@ -1,0 +1,5 @@
+q24_relu_64_64 | Epoch 1/5 | Train Acc: 0.955519 | Val Acc: 0.951333
+q24_relu_64_64 | Epoch 2/5 | Train Acc: 0.961778 | Val Acc: 0.955833
+q24_relu_64_64 | Epoch 3/5 | Train Acc: 0.978074 | Val Acc: 0.968833
+q24_relu_64_64 | Epoch 4/5 | Train Acc: 0.980870 | Val Acc: 0.968167
+q24_relu_64_64 | Epoch 5/5 | Train Acc: 0.980370 | Val Acc: 0.967000

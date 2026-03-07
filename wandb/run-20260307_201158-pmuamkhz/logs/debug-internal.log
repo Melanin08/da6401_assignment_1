@@ -1,0 +1,12 @@
+{"time":"2026-03-07T20:12:00.5170618+05:30","level":"INFO","msg":"stream: starting","core version":"0.25.0"}
+{"time":"2026-03-07T20:12:01.2376692+05:30","level":"INFO","msg":"stream: created new stream","id":"pmuamkhz"}
+{"time":"2026-03-07T20:12:01.2387298+05:30","level":"INFO","msg":"handler: started","stream_id":"pmuamkhz"}
+{"time":"2026-03-07T20:12:01.2403532+05:30","level":"INFO","msg":"stream: started","id":"pmuamkhz"}
+{"time":"2026-03-07T20:12:01.2403532+05:30","level":"INFO","msg":"sender: started","stream_id":"pmuamkhz"}
+{"time":"2026-03-07T20:12:01.2403532+05:30","level":"INFO","msg":"writer: started","stream_id":"pmuamkhz"}
+{"time":"2026-03-07T20:14:29.2836863+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-03-07T20:14:29.8886955+05:30","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2026-03-07T20:14:29.9763476+05:30","level":"INFO","msg":"stream: closing","id":"pmuamkhz"}
+{"time":"2026-03-07T20:14:29.9763476+05:30","level":"INFO","msg":"handler: closed","stream_id":"pmuamkhz"}
+{"time":"2026-03-07T20:14:29.9780157+05:30","level":"INFO","msg":"sender: closed","stream_id":"pmuamkhz"}
+{"time":"2026-03-07T20:14:29.9780157+05:30","level":"INFO","msg":"stream: closed","id":"pmuamkhz"}

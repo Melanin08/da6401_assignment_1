@@ -1,0 +1,12 @@
+{"time":"2026-03-07T15:42:49.4772672+05:30","level":"INFO","msg":"stream: starting","core version":"0.25.0"}
+{"time":"2026-03-07T15:42:50.0780201+05:30","level":"INFO","msg":"stream: created new stream","id":"awxwllbm"}
+{"time":"2026-03-07T15:42:50.0780201+05:30","level":"INFO","msg":"handler: started","stream_id":"awxwllbm"}
+{"time":"2026-03-07T15:42:50.0793125+05:30","level":"INFO","msg":"stream: started","id":"awxwllbm"}
+{"time":"2026-03-07T15:42:50.0793125+05:30","level":"INFO","msg":"sender: started","stream_id":"awxwllbm"}
+{"time":"2026-03-07T15:42:50.0793125+05:30","level":"INFO","msg":"writer: started","stream_id":"awxwllbm"}
+{"time":"2026-03-07T15:43:03.9369356+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-03-07T15:43:04.4796647+05:30","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2026-03-07T15:43:04.4868837+05:30","level":"INFO","msg":"stream: closing","id":"awxwllbm"}
+{"time":"2026-03-07T15:43:04.4868837+05:30","level":"INFO","msg":"handler: closed","stream_id":"awxwllbm"}
+{"time":"2026-03-07T15:43:04.4879318+05:30","level":"INFO","msg":"sender: closed","stream_id":"awxwllbm"}
+{"time":"2026-03-07T15:43:04.4879318+05:30","level":"INFO","msg":"stream: closed","id":"awxwllbm"}

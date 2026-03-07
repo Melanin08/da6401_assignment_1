@@ -1,0 +1,32 @@
+{
+  "os":  "Windows-10-10.0.26200-SP0",
+  "python":  "CPython 3.10.5",
+  "startedAt":  "2026-03-07T10:15:19.985991Z",
+  "args":  [
+    "--count",
+    "100"
+  ],
+  "program":  "C:\\Users\\Admin\\Documents\\da6401_assignment_1\\src\\q22_hyperparameter_sweep.py",
+  "codePath":  "src\\q22_hyperparameter_sweep.py",
+  "codePathLocal":  "src\\q22_hyperparameter_sweep.py",
+  "git":  {
+    "remote":  "https://github.com/Melanin08/da6401_assignment_1.git",
+    "commit":  "eb8cefa23cab3d38f85c856884403f820e088949"
+  },
+  "email":  "ge26z814@smail.iitm.ac.in",
+  "root":  "C:\\Users\\Admin\\Documents\\da6401_assignment_1",
+  "host":  "DESKTOP-DF1C1CV",
+  "executable":  "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+  "cpu_count":  4,
+  "cpu_count_logical":  8,
+  "disk":  {
+    "/":  {
+      "total":  "254231441408",
+      "used":  "241434705920"
+    }
+  },
+  "memory":  {
+    "total":  "8211902464"
+  },
+  "writerId":  "4ys6xbac1w54o3w4m0x7v4jvot6dj63q"
+}

@@ -1,0 +1,12 @@
+{"time":"2026-03-07T18:36:08.2316409+05:30","level":"INFO","msg":"stream: starting","core version":"0.25.0"}
+{"time":"2026-03-07T18:36:08.854197+05:30","level":"INFO","msg":"stream: created new stream","id":"kuqdenc2"}
+{"time":"2026-03-07T18:36:08.854197+05:30","level":"INFO","msg":"handler: started","stream_id":"kuqdenc2"}
+{"time":"2026-03-07T18:36:08.8548003+05:30","level":"INFO","msg":"stream: started","id":"kuqdenc2"}
+{"time":"2026-03-07T18:36:08.8548003+05:30","level":"INFO","msg":"writer: started","stream_id":"kuqdenc2"}
+{"time":"2026-03-07T18:36:08.8548003+05:30","level":"INFO","msg":"sender: started","stream_id":"kuqdenc2"}
+{"time":"2026-03-07T18:37:16.0222456+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-03-07T18:37:16.4315155+05:30","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2026-03-07T18:37:16.4649277+05:30","level":"INFO","msg":"stream: closing","id":"kuqdenc2"}
+{"time":"2026-03-07T18:37:16.465915+05:30","level":"INFO","msg":"handler: closed","stream_id":"kuqdenc2"}
+{"time":"2026-03-07T18:37:16.4662376+05:30","level":"INFO","msg":"sender: closed","stream_id":"kuqdenc2"}
+{"time":"2026-03-07T18:37:16.4662376+05:30","level":"INFO","msg":"stream: closed","id":"kuqdenc2"}

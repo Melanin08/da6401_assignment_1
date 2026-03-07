@@ -1,0 +1,53 @@
+{
+  "os":  "Windows-10-10.0.26200-SP0",
+  "python":  "CPython 3.10.5",
+  "startedAt":  "2026-03-07T09:22:18.117553Z",
+  "args":  [
+    "-d",
+    "fashion_mnist",
+    "-e",
+    "2",
+    "-b",
+    "32",
+    "-l",
+    "mse",
+    "-o",
+    "nag",
+    "-lr",
+    "0.0005",
+    "-wd",
+    "0.0001",
+    "-nhl",
+    "2",
+    "-sz",
+    "64",
+    "64",
+    "-a",
+    "tanh",
+    "-wi",
+    "random"
+  ],
+  "program":  "C:\\Users\\Admin\\Documents\\da6401_assignment_1\\src\\train.py",
+  "codePath":  "src\\train.py",
+  "codePathLocal":  "src\\train.py",
+  "git":  {
+    "remote":  "https://github.com/Melanin08/da6401_assignment_1.git",
+    "commit":  "eb8cefa23cab3d38f85c856884403f820e088949"
+  },
+  "email":  "ge26z814@smail.iitm.ac.in",
+  "root":  "C:\\Users\\Admin\\Documents\\da6401_assignment_1",
+  "host":  "DESKTOP-DF1C1CV",
+  "executable":  "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+  "cpu_count":  4,
+  "cpu_count_logical":  8,
+  "disk":  {
+    "/":  {
+      "total":  "254231441408",
+      "used":  "233692901376"
+    }
+  },
+  "memory":  {
+    "total":  "8211902464"
+  },
+  "writerId":  "upya5darij75nnf1jllppicxdre0vamf"
+}

@@ -1,0 +1,12 @@
+{"time":"2026-03-07T19:26:00.3251489+05:30","level":"INFO","msg":"stream: starting","core version":"0.25.0"}
+{"time":"2026-03-07T19:26:00.8733208+05:30","level":"INFO","msg":"stream: created new stream","id":"lo4tuocl"}
+{"time":"2026-03-07T19:26:00.8739954+05:30","level":"INFO","msg":"handler: started","stream_id":"lo4tuocl"}
+{"time":"2026-03-07T19:26:00.874617+05:30","level":"INFO","msg":"stream: started","id":"lo4tuocl"}
+{"time":"2026-03-07T19:26:00.875254+05:30","level":"INFO","msg":"sender: started","stream_id":"lo4tuocl"}
+{"time":"2026-03-07T19:26:00.874617+05:30","level":"INFO","msg":"writer: started","stream_id":"lo4tuocl"}
+{"time":"2026-03-07T19:27:02.7569516+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-03-07T19:27:03.6683798+05:30","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2026-03-07T19:27:03.7333029+05:30","level":"INFO","msg":"stream: closing","id":"lo4tuocl"}
+{"time":"2026-03-07T19:27:03.7369482+05:30","level":"INFO","msg":"handler: closed","stream_id":"lo4tuocl"}
+{"time":"2026-03-07T19:27:03.7490363+05:30","level":"INFO","msg":"sender: closed","stream_id":"lo4tuocl"}
+{"time":"2026-03-07T19:27:03.7495436+05:30","level":"INFO","msg":"stream: closed","id":"lo4tuocl"}

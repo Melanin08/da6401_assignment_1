@@ -1,0 +1,11 @@
+Epoch 1/10 | Train Acc: 0.920463 | Val Acc: 0.919333 | Test Acc: 0.920700 | Test F1: 0.919254
+Epoch 2/10 | Train Acc: 0.955407 | Val Acc: 0.947833 | Test Acc: 0.950700 | Test F1: 0.950827
+Epoch 3/10 | Train Acc: 0.959630 | Val Acc: 0.958000 | Test Acc: 0.954800 | Test F1: 0.954335
+Epoch 4/10 | Train Acc: 0.948352 | Val Acc: 0.942333 | Test Acc: 0.939400 | Test F1: 0.939454
+Epoch 5/10 | Train Acc: 0.960074 | Val Acc: 0.953333 | Test Acc: 0.955300 | Test F1: 0.955430
+Epoch 6/10 | Train Acc: 0.930481 | Val Acc: 0.926333 | Test Acc: 0.927700 | Test F1: 0.927171
+Epoch 7/10 | Train Acc: 0.969148 | Val Acc: 0.962833 | Test Acc: 0.964300 | Test F1: 0.963937
+Epoch 8/10 | Train Acc: 0.956907 | Val Acc: 0.951167 | Test Acc: 0.951500 | Test F1: 0.951211
+Epoch 9/10 | Train Acc: 0.949130 | Val Acc: 0.942000 | Test Acc: 0.942400 | Test F1: 0.942216
+Epoch 10/10 | Train Acc: 0.976111 | Val Acc: 0.967000 | Test Acc: 0.964900 | Test F1: 0.964688
+Training complete!

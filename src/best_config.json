@@ -1,0 +1,20 @@
+{
+    "dataset": "fashion_mnist",
+    "epochs": 10,
+    "batch_size": 32,
+    "learning_rate": 0.001,
+    "optimizer": "nag",
+    "weight_decay": 0.0001,
+    "num_layers": 2,
+    "hidden_size": [
+        128,
+        128
+    ],
+    "activation": "tanh",
+    "loss": "cross_entropy",
+    "weight_init": "xavier",
+    "best_test_f1": 0.85567085783756,
+    "best_test_accuracy": 0.8578,
+    "best_test_precision": 0.8569746090188135,
+    "best_test_recall": 0.8578000000000001
+}

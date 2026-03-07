@@ -1,0 +1,73 @@
+_wandb:
+    value:
+        cli_version: 0.25.0
+        e:
+            n37qqlotnzia7e72dlttxx43pubkl6kg:
+                args:
+                    - --count
+                    - "100"
+                codePath: src\q22_hyperparameter_sweep.py
+                codePathLocal: src\q22_hyperparameter_sweep.py
+                cpu_count: 4
+                cpu_count_logical: 8
+                disk:
+                    /:
+                        total: "254231441408"
+                        used: "241440481280"
+                email: ge26z814@smail.iitm.ac.in
+                executable: C:\Users\Admin\AppData\Local\Programs\Python\Python310\python.exe
+                git:
+                    commit: eb8cefa23cab3d38f85c856884403f820e088949
+                    remote: https://github.com/Melanin08/da6401_assignment_1.git
+                host: DESKTOP-DF1C1CV
+                memory:
+                    total: "8211902464"
+                os: Windows-10-10.0.26200-SP0
+                program: C:\Users\Admin\Documents\da6401_assignment_1\src\q22_hyperparameter_sweep.py
+                python: CPython 3.10.5
+                root: C:\Users\Admin\Documents\da6401_assignment_1
+                startedAt: "2026-03-07T10:27:02.166823Z"
+                writerId: n37qqlotnzia7e72dlttxx43pubkl6kg
+        m: []
+        python_version: 3.10.5
+        t:
+            "1":
+                - 2
+                - 3
+                - 5
+                - 53
+            "2":
+                - 2
+                - 3
+                - 5
+                - 53
+            "3":
+                - 2
+                - 14
+            "4": 3.10.5
+            "5": 0.25.0
+            "8":
+                - 3
+            "12": 0.25.0
+            "13": windows-amd64
+activation:
+    value: tanh
+batch_size:
+    value: 128
+dataset:
+    value: mnist
+epochs:
+    value: 5
+hidden_size:
+    value:
+        - 64
+learning_rate:
+    value: 0.0005
+loss:
+    value: cross_entropy
+optimizer:
+    value: nag
+weight_decay:
+    value: 0
+weight_init:
+    value: random

@@ -1,0 +1,5 @@
+q24_sigmoid_128_128_128 | Epoch 1/5 | Train Acc: 0.925222 | Val Acc: 0.927667
+q24_sigmoid_128_128_128 | Epoch 2/5 | Train Acc: 0.955667 | Val Acc: 0.950333
+q24_sigmoid_128_128_128 | Epoch 3/5 | Train Acc: 0.965037 | Val Acc: 0.957333
+q24_sigmoid_128_128_128 | Epoch 4/5 | Train Acc: 0.974259 | Val Acc: 0.964500
+q24_sigmoid_128_128_128 | Epoch 5/5 | Train Acc: 0.974074 | Val Acc: 0.963500

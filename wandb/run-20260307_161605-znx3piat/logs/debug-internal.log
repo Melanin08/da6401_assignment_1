@@ -1,0 +1,12 @@
+{"time":"2026-03-07T16:16:07.4883494+05:30","level":"INFO","msg":"stream: starting","core version":"0.25.0"}
+{"time":"2026-03-07T16:16:08.003751+05:30","level":"INFO","msg":"stream: created new stream","id":"znx3piat"}
+{"time":"2026-03-07T16:16:08.003751+05:30","level":"INFO","msg":"handler: started","stream_id":"znx3piat"}
+{"time":"2026-03-07T16:16:08.0052606+05:30","level":"INFO","msg":"stream: started","id":"znx3piat"}
+{"time":"2026-03-07T16:16:08.0052606+05:30","level":"INFO","msg":"sender: started","stream_id":"znx3piat"}
+{"time":"2026-03-07T16:16:08.0052606+05:30","level":"INFO","msg":"writer: started","stream_id":"znx3piat"}
+{"time":"2026-03-07T16:16:23.7698433+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-03-07T16:16:24.2509668+05:30","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2026-03-07T16:16:24.2627363+05:30","level":"INFO","msg":"stream: closing","id":"znx3piat"}
+{"time":"2026-03-07T16:16:24.2627363+05:30","level":"INFO","msg":"handler: closed","stream_id":"znx3piat"}
+{"time":"2026-03-07T16:16:24.263242+05:30","level":"INFO","msg":"sender: closed","stream_id":"znx3piat"}
+{"time":"2026-03-07T16:16:24.263242+05:30","level":"INFO","msg":"stream: closed","id":"znx3piat"}

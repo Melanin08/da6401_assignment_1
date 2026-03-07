@@ -1,0 +1,31 @@
+2026-03-07 15:18:03,688 INFO    MainThread:17064 [wandb_setup.py:_flush():81] Current SDK version is 0.25.0
+2026-03-07 15:18:03,689 INFO    MainThread:17064 [wandb_setup.py:_flush():81] Configure stats pid to 17064
+2026-03-07 15:18:03,689 INFO    MainThread:17064 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2026-03-07 15:18:03,689 INFO    MainThread:17064 [wandb_init.py:setup_run_log_directory():717] Logging user logs to C:\Users\Admin\Documents\da6401_assignment_1\wandb\run-20260307_151803-1be80wjm\logs\debug.log
+2026-03-07 15:18:03,689 INFO    MainThread:17064 [wandb_init.py:setup_run_log_directory():718] Logging internal logs to C:\Users\Admin\Documents\da6401_assignment_1\wandb\run-20260307_151803-1be80wjm\logs\debug-internal.log
+2026-03-07 15:18:03,690 INFO    MainThread:17064 [wandb_init.py:init():844] calling init triggers
+2026-03-07 15:18:03,690 INFO    MainThread:17064 [wandb_init.py:init():849] wandb.init called with sweep_config: {'activation': 'relu', 'batch_size': 128, 'dataset': 'mnist', 'epochs': 10, 'hidden_size': [128, 128], 'learning_rate': 0.0001, 'loss': 'cross_entropy', 'optimizer': 'nag', 'weight_decay': 0.0001, 'weight_init': 'xavier'}
+config: {'dataset': 'mnist', 'epochs': 10, 'batch_size': 128, 'learning_rate': 0.0001, 'optimizer': 'nag', 'weight_decay': 0.0001, 'num_layers': 2, 'hidden_size': [128, 128], 'activation': 'relu', 'loss': 'cross_entropy', 'weight_init': 'xavier', 'wandb_project': 'da6401-assignment1', 'model_save_path': 'src/best_model.npy', 'config_save_path': 'src/best_config.json', 'seed': 42, '_wandb': {}}
+2026-03-07 15:18:03,690 INFO    MainThread:17064 [wandb_init.py:init():892] starting backend
+2026-03-07 15:18:05,720 INFO    MainThread:17064 [wandb_init.py:init():895] sending inform_init request
+2026-03-07 15:18:05,799 INFO    MainThread:17064 [wandb_init.py:init():903] backend started and connected
+2026-03-07 15:18:05,803 INFO    MainThread:17064 [wandb_run.py:_config_callback():1403] config_cb None None {'activation': 'relu', 'batch_size': 128, 'dataset': 'mnist', 'epochs': 10, 'hidden_size': [128, 128], 'learning_rate': 0.0001, 'loss': 'cross_entropy', 'optimizer': 'nag', 'weight_decay': 0.0001, 'weight_init': 'xavier'}
+2026-03-07 15:18:05,804 INFO    MainThread:17064 [wandb_init.py:init():973] updated telemetry
+2026-03-07 15:18:05,846 INFO    MainThread:17064 [wandb_init.py:init():997] communicating run to backend with 90.0 second timeout
+2026-03-07 15:19:35,851 WARNING MainThread:17064 [wandb_init.py:init():1587] [no run ID] interrupted
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python310\lib\site-packages\wandb\sdk\wandb_init.py", line 1578, in init
+    run = wi.init(run_settings, run_config, run_printer)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python310\lib\site-packages\wandb\sdk\wandb_init.py", line 1008, in init
+    result = wait_with_progress(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python310\lib\site-packages\wandb\sdk\mailbox\wait_with_progress.py", line 24, in wait_with_progress
+    return wait_all_with_progress(
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python310\lib\site-packages\wandb\sdk\mailbox\wait_with_progress.py", line 78, in wait_all_with_progress
+    return asyncer.run(progress_loop_with_timeout)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python310\lib\site-packages\wandb\sdk\lib\asyncio_manager.py", line 137, in run
+    return future.result()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python310\lib\concurrent\futures\_base.py", line 441, in result
+    self._condition.wait(timeout)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python310\lib\threading.py", line 320, in wait
+    waiter.acquire()
+KeyboardInterrupt

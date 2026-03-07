@@ -1,0 +1,12 @@
+{"time":"2026-03-07T19:48:45.2121592+05:30","level":"INFO","msg":"stream: starting","core version":"0.25.0"}
+{"time":"2026-03-07T19:48:45.7208146+05:30","level":"INFO","msg":"stream: created new stream","id":"vopzoy3b"}
+{"time":"2026-03-07T19:48:45.7208146+05:30","level":"INFO","msg":"handler: started","stream_id":"vopzoy3b"}
+{"time":"2026-03-07T19:48:45.7213515+05:30","level":"INFO","msg":"stream: started","id":"vopzoy3b"}
+{"time":"2026-03-07T19:48:45.7213515+05:30","level":"INFO","msg":"writer: started","stream_id":"vopzoy3b"}
+{"time":"2026-03-07T19:48:45.7213515+05:30","level":"INFO","msg":"sender: started","stream_id":"vopzoy3b"}
+{"time":"2026-03-07T19:49:22.085896+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-03-07T19:49:23.739389+05:30","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2026-03-07T19:49:23.7509838+05:30","level":"INFO","msg":"stream: closing","id":"vopzoy3b"}
+{"time":"2026-03-07T19:49:23.7509838+05:30","level":"INFO","msg":"handler: closed","stream_id":"vopzoy3b"}
+{"time":"2026-03-07T19:49:23.7514899+05:30","level":"INFO","msg":"sender: closed","stream_id":"vopzoy3b"}
+{"time":"2026-03-07T19:49:23.7514899+05:30","level":"INFO","msg":"stream: closed","id":"vopzoy3b"}

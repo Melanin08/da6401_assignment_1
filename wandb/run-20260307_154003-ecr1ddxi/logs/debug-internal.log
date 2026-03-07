@@ -1,0 +1,12 @@
+{"time":"2026-03-07T15:40:05.3829434+05:30","level":"INFO","msg":"stream: starting","core version":"0.25.0"}
+{"time":"2026-03-07T15:40:05.8548538+05:30","level":"INFO","msg":"stream: created new stream","id":"ecr1ddxi"}
+{"time":"2026-03-07T15:40:05.8556094+05:30","level":"INFO","msg":"handler: started","stream_id":"ecr1ddxi"}
+{"time":"2026-03-07T15:40:05.8556094+05:30","level":"INFO","msg":"stream: started","id":"ecr1ddxi"}
+{"time":"2026-03-07T15:40:05.8561232+05:30","level":"INFO","msg":"writer: started","stream_id":"ecr1ddxi"}
+{"time":"2026-03-07T15:40:05.8561232+05:30","level":"INFO","msg":"sender: started","stream_id":"ecr1ddxi"}
+{"time":"2026-03-07T15:40:44.6424225+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-03-07T15:40:45.0583591+05:30","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2026-03-07T15:40:45.0697733+05:30","level":"INFO","msg":"stream: closing","id":"ecr1ddxi"}
+{"time":"2026-03-07T15:40:45.0697733+05:30","level":"INFO","msg":"handler: closed","stream_id":"ecr1ddxi"}
+{"time":"2026-03-07T15:40:45.0720018+05:30","level":"INFO","msg":"sender: closed","stream_id":"ecr1ddxi"}
+{"time":"2026-03-07T15:40:45.0720018+05:30","level":"INFO","msg":"stream: closed","id":"ecr1ddxi"}

@@ -1,0 +1,2 @@
+Epoch 1/2 | Train Acc: 0.955463 | Val Acc: 0.950833 | Test Acc: 0.952800 | Test F1: 0.952797
+Epoch 2/2 | Train Acc: 0.977389 | Val Acc: 0.966000 | Test Acc: 0.967200 | Test F1: 0.967006

@@ -1,0 +1,12 @@
+{"time":"2026-03-07T19:50:12.6567036+05:30","level":"INFO","msg":"stream: starting","core version":"0.25.0"}
+{"time":"2026-03-07T19:50:13.1247768+05:30","level":"INFO","msg":"stream: created new stream","id":"pl86uetv"}
+{"time":"2026-03-07T19:50:13.1253347+05:30","level":"INFO","msg":"handler: started","stream_id":"pl86uetv"}
+{"time":"2026-03-07T19:50:13.1258846+05:30","level":"INFO","msg":"stream: started","id":"pl86uetv"}
+{"time":"2026-03-07T19:50:13.1258846+05:30","level":"INFO","msg":"writer: started","stream_id":"pl86uetv"}
+{"time":"2026-03-07T19:50:13.1258846+05:30","level":"INFO","msg":"sender: started","stream_id":"pl86uetv"}
+{"time":"2026-03-07T19:50:51.6103606+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-03-07T19:50:52.3456648+05:30","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2026-03-07T19:50:52.3537329+05:30","level":"INFO","msg":"stream: closing","id":"pl86uetv"}
+{"time":"2026-03-07T19:50:52.3537329+05:30","level":"INFO","msg":"handler: closed","stream_id":"pl86uetv"}
+{"time":"2026-03-07T19:50:52.3542402+05:30","level":"INFO","msg":"sender: closed","stream_id":"pl86uetv"}
+{"time":"2026-03-07T19:50:52.3542402+05:30","level":"INFO","msg":"stream: closed","id":"pl86uetv"}
