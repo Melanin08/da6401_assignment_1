@@ -66,39 +66,41 @@ pip install -r requirements.txt
 
 # Project Structure
 
-da6401_assignment_1
+da6401_assignment_1/
+│
+├── models/
+│   └── .gitkeep
+│
+├── notebooks/
+│   └── wandb_demo.ipynb
+│
+├── src/
+│   │
+│   ├── ann/
+│   │   ├── __init__.py
+│   │   ├── activations.py
+│   │   ├── neural_layer.py
+│   │   ├── neural_network.py
+│   │   ├── objective_functions.py
+│   │   └── optimizers.py
+│   │
+│   ├── utils/
+│   │   ├── __init__.py
+│   │   └── data_loader.py
+│   │
+│   ├── train.py
+│   ├── inference.py
+│   ├── q21_data_exploration.py
+│   ├── q22_hyperparameter_sweep.py
+│   ├── q24_vanishing_gradient.py
+│   └── q28_error_analysis.py
+│
+├── best_config.json
+├── best_model.npy
+│
+├── requirements.txt
+└── README.md
 
-models/  
-.gitkeep  
-
-notebooks/  
-wandb_demo.ipynb  
-
-src/  
-
-ann/  
-__init__.py  
-activations.py  
-neural_layer.py  
-neural_network.py  
-objective_functions.py  
-optimizers.py  
-
-utils/  
-__init__.py  
-data_loader.py  
-
-train.py  
-inference.py 
-q21_data_exploration.py
-q22_hyperparameter_sweep.py 
-q24_vanishing_gradient.py
-q28_error_analysis.py
-best_config.json  
-best_model.npy  
-
-requirements.txt  
-README.md  
 
 
 # File Description
