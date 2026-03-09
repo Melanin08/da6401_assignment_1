@@ -58,9 +58,13 @@ class NeuralNetwork:
 
         if self.weight_init == "xavier":
             limit = np.sqrt(6.0 / (prev_size + self.output_size))
-            self.output_W = np.random.uniform(-limit, limit, (prev_size, self.output_size)).astype(np.float64)
+            self.output_W = np.random.uniform(
+                -limit, limit, (prev_size, self.output_size)
+            ).astype(np.float64)
         elif self.weight_init == "random":
-            self.output_W = (0.01 * np.random.randn(prev_size, self.output_size)).astype(np.float64)
+            self.output_W = (0.01 * np.random.randn(prev_size, self.output_size)).astype(
+                np.float64
+            )
         elif self.weight_init == "zeros":
             self.output_W = np.zeros((prev_size, self.output_size), dtype=np.float64)
         else:
@@ -87,9 +91,10 @@ class NeuralNetwork:
     def forward(self, X):
         """
         Forward propagation through all layers.
-        Returns logits (no softmax applied)
-        X is shape (b, D_in) and output is shape (b, D_out).
-        b is batch size, D_in is input dimension, D_out is output dimension.
+        Returns logits (no softmax applied).
+
+        X shape: (batch_size, input_dim)
+        output shape: (batch_size, output_dim)
         """
         out = X
         for layer in self.layers:
@@ -102,14 +107,18 @@ class NeuralNetwork:
     def backward(self, y_true, y_pred=None):
         """
         Backward propagation to compute gradients.
-        Returns two numpy arrays: grad_Ws, grad_bs.
-        - grad_Ws[0] is gradient for the last (output) layer weights,
-          grad_bs[0] is gradient for the last layer biases, and so on.
+
+        Returns gradients in forward layer order:
+        grad_W[0] corresponds to W0,
+        grad_W[1] corresponds to W1,
+        ...
+        grad_W[-1] corresponds to the output layer weights.
         """
         if self.loss_name == "cross_entropy":
             _, probs = cross_entropy_loss(self.logits, y_true)
             self.probs = probs
             grad_logits = cross_entropy_grad(probs, y_true)
+
         elif self.loss_name == "mse":
             probs = softmax(self.logits)
             self.probs = probs
@@ -125,18 +134,20 @@ class NeuralNetwork:
         else:
             raise ValueError("Unsupported loss")
 
+        # Output layer gradients
         self.output_grad_W = np.dot(self.output_input.T, grad_logits)
         self.output_grad_b = np.sum(grad_logits, axis=0, keepdims=True)
 
+        # Backpropagate into hidden layers
         grad_hidden = np.dot(grad_logits, self.output_W.T)
-
-        grad_W_list = [self.output_grad_W]
-        grad_b_list = [self.output_grad_b]
 
         for layer in reversed(self.layers):
             grad_hidden = layer.backward(grad_hidden)
-            grad_W_list.append(layer.grad_W)
-            grad_b_list.append(layer.grad_b)
+
+        # Store gradients in forward order to match get_weights():
+        # W0, W1, ..., W_last_hidden, W_output
+        grad_W_list = [layer.grad_W for layer in self.layers] + [self.output_grad_W]
+        grad_b_list = [layer.grad_b for layer in self.layers] + [self.output_grad_b]
 
         self.grad_W = np.empty(len(grad_W_list), dtype=object)
         self.grad_b = np.empty(len(grad_b_list), dtype=object)
@@ -152,6 +163,7 @@ class NeuralNetwork:
 
     def train(self, X_train, y_train, epochs=1, batch_size=32):
         n = X_train.shape[0]
+
         for _ in range(epochs):
             indices = np.arange(n)
             np.random.shuffle(indices)
@@ -163,8 +175,7 @@ class NeuralNetwork:
                 X_batch = X_train[batch_idx]
                 y_batch = y_train[batch_idx]
 
-                logits = self.forward(X_batch)
-                _ = logits
+                self.forward(X_batch)
                 self.backward(y_batch)
                 self.update_weights()
 
@@ -191,18 +202,21 @@ class NeuralNetwork:
 
     def get_weights(self):
         d = {}
+
         for i, layer in enumerate(self.layers):
             d[f"W{i}"] = layer.W.copy()
             d[f"b{i}"] = layer.b.copy()
 
         d[f"W{len(self.layers)}"] = self.output_W.copy()
         d[f"b{len(self.layers)}"] = self.output_b.copy()
+
         return d
 
     def set_weights(self, weight_dict):
         for i, layer in enumerate(self.layers):
             w_key = f"W{i}"
             b_key = f"b{i}"
+
             if w_key in weight_dict:
                 layer.W = weight_dict[w_key].copy()
             if b_key in weight_dict:

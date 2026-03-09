@@ -65,7 +65,9 @@ pip install -r requirements.txt
 
 
 # Project Structure
+# Project Structure
 
+```
 da6401_assignment_1/
 │
 ├── models/
@@ -100,8 +102,7 @@ da6401_assignment_1/
 │
 ├── requirements.txt
 └── README.md
-
-
+```
 
 # File Description
 
@@ -384,7 +385,7 @@ Fashion-MNIST Test Accuracy ≈ **86.6%**
 
 Full report available at:
 
-https://wandb.ai/ge26z814-iitm-india/da6401-assignment1/reports/Multi-Layer-Perceptron-for-Image-Classification--VmlldzoxNjEzMjU1MQ
+https://wandb.ai/ge26z814-iitm-india/da6401-assignment1/reports/Multi-Layer-Perceptron-for-Image-Classification--VmlldzoxNjEzMjU1MQ?accessToken=88b1uzf5miahd7fqh2l61rvbd8erdgzviwygy4vx4hue1sev2d7x6jmnbpf1m87v
 
 # Notes
 
