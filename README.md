@@ -93,7 +93,7 @@ inference.py
 q21_data_exploration.py
 q22_hyperparameter_sweep.py 
 q24_vanishing_gradient.py
-q28_error_analysis.py 
+q28_error_analysis.py
 best_config.json  
 best_model.npy  
 
@@ -291,7 +291,6 @@ Observations:
 
 - Sigmoid networks suffered from vanishing gradients
 - ReLU maintained stronger gradient values
-
 
 # 2.5 Dead Neuron Investigation
 
