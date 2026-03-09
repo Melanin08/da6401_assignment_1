@@ -66,8 +66,6 @@ pip install -r requirements.txt
 
 # Project Structure
 
-# Project Structure
-
 ```
 da6401_assignment_1/
 │
