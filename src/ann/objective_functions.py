@@ -16,7 +16,7 @@ def cross_entropy_loss(logits, y_true):
 
 def cross_entropy_grad(probs, y_true):
     batch_size = y_true.shape[0]
-    return (probs - y_true) / batch_size
+    return (probs - y_true) 
 
 
 def mse_loss(predictions, y_true):
