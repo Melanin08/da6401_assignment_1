@@ -56,6 +56,7 @@ class NeuralNetwork:
             self.layers.append(layer)
             prev_size = hidden_size
 
+        # Output layer initialization
         if self.weight_init == "xavier":
             limit = np.sqrt(6.0 / (prev_size + self.output_size))
             self.output_W = np.random.uniform(-limit, limit, (prev_size, self.output_size)).astype(np.float64)
@@ -87,9 +88,6 @@ class NeuralNetwork:
     def forward(self, X):
         """
         Forward propagation through all layers.
-        Returns logits (no softmax applied)
-        X is shape (b, D_in) and output is shape (b, D_out).
-        b is batch size, D_in is input dimension, D_out is output dimension.
         """
         out = X
         for layer in self.layers:
@@ -102,14 +100,13 @@ class NeuralNetwork:
     def backward(self, y_true, y_pred=None):
         """
         Backward propagation to compute gradients.
-        Returns two numpy arrays: grad_Ws, grad_bs.
-        - grad_Ws[0] is gradient for the last (output) layer weights,
-          grad_bs[0] is gradient for the last layer biases, and so on.
         """
+
         if self.loss_name == "cross_entropy":
             _, probs = cross_entropy_loss(self.logits, y_true)
             self.probs = probs
             grad_logits = cross_entropy_grad(probs, y_true)
+
         elif self.loss_name == "mse":
             probs = softmax(self.logits)
             self.probs = probs
@@ -122,11 +119,15 @@ class NeuralNetwork:
                 p = probs[i].reshape(-1, 1)
                 jacobian = np.diagflat(p) - np.dot(p, p.T)
                 grad_logits[i] = np.dot(jacobian, grad_probs[i])
+
         else:
             raise ValueError("Unsupported loss")
 
-        self.output_grad_W = np.dot(self.output_input.T, grad_logits)
-        self.output_grad_b = np.sum(grad_logits, axis=0, keepdims=True)
+        # ✅ FIX: normalize gradients by batch size
+        batch_size = grad_logits.shape[0]
+
+        self.output_grad_W = np.dot(self.output_input.T, grad_logits) / batch_size
+        self.output_grad_b = np.sum(grad_logits, axis=0, keepdims=True) / batch_size
 
         grad_hidden = np.dot(grad_logits, self.output_W.T)
 
@@ -152,6 +153,7 @@ class NeuralNetwork:
 
     def train(self, X_train, y_train, epochs=1, batch_size=32):
         n = X_train.shape[0]
+
         for _ in range(epochs):
             indices = np.arange(n)
             np.random.shuffle(indices)
@@ -179,6 +181,7 @@ class NeuralNetwork:
 
         preds = np.argmax(probs, axis=1)
         true = np.argmax(y, axis=1)
+
         accuracy = float(np.mean(preds == true))
 
         return {
@@ -191,20 +194,24 @@ class NeuralNetwork:
 
     def get_weights(self):
         d = {}
+
         for i, layer in enumerate(self.layers):
             d[f"W{i}"] = layer.W.copy()
             d[f"b{i}"] = layer.b.copy()
 
         d[f"W{len(self.layers)}"] = self.output_W.copy()
         d[f"b{len(self.layers)}"] = self.output_b.copy()
+
         return d
 
     def set_weights(self, weight_dict):
         for i, layer in enumerate(self.layers):
             w_key = f"W{i}"
             b_key = f"b{i}"
+
             if w_key in weight_dict:
                 layer.W = weight_dict[w_key].copy()
+
             if b_key in weight_dict:
                 layer.b = weight_dict[b_key].copy()
 
@@ -213,6 +220,7 @@ class NeuralNetwork:
 
         if out_w_key in weight_dict:
             self.output_W = weight_dict[out_w_key].copy()
+
         if out_b_key in weight_dict:
             self.output_b = weight_dict[out_b_key].copy()
 
