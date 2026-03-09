@@ -384,14 +384,11 @@ MNIST Test Accuracy ≈ **97.5%**
 Fashion-MNIST Test Accuracy ≈ **86.6%**
 
 
-# Weights & Biases Report
+## Weights & Biases Report
 
-Full report available at:
-<<<<<<< HEAD
+Full experiment report available here:
 
-=======
->>>>>>> 0d5519b525ef9163cb4ce05ce3af1722ad85a241
-https://wandb.ai/ge26z814-iitm-india/da6401-assignment1/reports/Multi-Layer-Perceptron-for-Image-Classification--VmlldzoxNjEzMjU1MQ?accessToken=88b1uzf5miahd7fqh2l61rvbd8erdgzviwygy4vx4hue1sev2d7x6jmnbpf1m87v
+[View W&B Experiment Report](https://wandb.ai/ge26z814-iitm-india/da6401-assignment1/reports/Multi-Layer-Perceptron-for-Image-Classification--VmlldzoxNjEzMjU1MQ?accessToken=88b1uzf5miahd7fqh2l61rvbd8erdgzviwygy4vx4hue1sev2d7x6jmnbpf1m87v)
 
 # Notes
 
