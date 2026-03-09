@@ -1,5 +1,5 @@
 import numpy as np
-from tensorflow.keras.datasets import mnist, fashion_mnist
+from keras.datasets import mnist, fashion_mnist
 
 
 MNIST_CLASS_NAMES = [str(i) for i in range(10)]

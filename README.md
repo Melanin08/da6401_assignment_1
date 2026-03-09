@@ -1,99 +1,392 @@
 # Assignment 1: Multi-Layer Perceptron for Image Classification
 
-## Overview
+Course: DA6401 – Introduction to Deep Learning  
+Student: Ayman Hamza Haji 
 
-This assignment requires you to implement a neural network from scratch using only NumPy. You will build all components including layers, activations, optimizers, and loss functions, then train your network on MNIST or Fashion-MNIST datasets.
+# Overview
 
-## Learning Objectives
+This project implements a **Multi-Layer Perceptron (MLP)** neural network from scratch using **NumPy only**. The objective of this assignment is to understand the internal working of neural networks by manually implementing all major components including:
 
-- Understand forward and backward propagation
-- Implement gradient computation manually
-- Implement various optimizers (SGD, Momentum, NAG, RMSprop)
-- Work with activation functions and their derivatives
-- Train and evaluate neural networks
-- Log experiments using Weights & Biases
+- forward propagation
+- backward propagation
+- gradient computation
+- activation functions
+- loss functions
+- optimization algorithms
+- weight initialization methods
 
-## Installation
+The model is trained on the **MNIST dataset** and evaluated on the **Fashion-MNIST dataset**. Experiments and results are tracked using **Weights & Biases (W&B)**.
 
-```bash
+
+# Learning Objectives
+
+The main learning goals of this assignment are:
+
+- Understand forward propagation in neural networks
+- Implement backpropagation and manual gradient computation
+- Implement activation functions and their derivatives
+- Implement optimization algorithms
+- Train neural networks from scratch
+- Perform hyperparameter tuning
+- Track and analyze experiments using Weights & Biases
+
+
+# Datasets
+
+Two datasets were used in this project.
+
+## MNIST
+
+The MNIST dataset contains grayscale images of handwritten digits from **0 to 9**.
+
+Image size: **28 × 28**  
+Number of classes: **10**
+
+## Fashion-MNIST
+
+Fashion-MNIST contains grayscale images of clothing items such as:
+
+- shirts
+- trousers
+- sneakers
+- bags
+- coats
+
+Fashion-MNIST is more complex than MNIST because some classes have very similar visual patterns.
+
+Both datasets are loaded using **keras.datasets**.
+
+
+# Installation
+
+Install all required libraries using:
+
 pip install -r requirements.txt
-```
 
-## Usage
 
-### Training
+# Project Structure
 
-```bash
-python src/train.py -d mnist -e 10 -b 64 -lr 0.01 -o sgd -nhl 2 -sz 128 128 -a relu -l cross_entropy -wi xavier
-```
+da6401_assignment_1
 
-**Arguments:**
-- `-d, --dataset`: Dataset to use (mnist/fashion_mnist)
-- `-e, --epochs`: Number of training epochs
-- `-b, --batch_size`: Mini-batch size
-- `-lr, --learning_rate`: Initial learning rate
-- `-wd, --weight_decay`: Weight decay for L2 regularization
-- `-o, --optimizer`: Optimizer (sgd/momentum/nag/rmsprop)
-- `-nhl, --num_layers`: Number of hidden layers
-- `-sz, --hidden_size`: Hidden layer sizes (space-separated)
-- `-a, --activation`: Activation function (relu/sigmoid/tanh)
-- `-l, --loss`: Loss function (cross_entropy/mse)
-- `-wi, --weight_init`: Weight initialization (random/xavier)
+models/  
+.gitkeep  
 
-### Inference
+notebooks/  
+wandb_demo.ipynb  
 
-```bash
-python src/inference.py -model_path best_model.npy -config_path best_model_config.json -d mnist
-```
+src/  
 
-### Data Exploration
+ann/  
+__init__.py  
+activations.py  
+neural_layer.py  
+neural_network.py  
+objective_functions.py  
+optimizers.py  
 
-```bash
-python src/data_exploration.py
-```
+utils/  
+__init__.py  
+data_loader.py  
 
-### Hyperparameter Sweep
+train.py  
+inference.py 
+q21_data_exploration.py
+q22_hyperparameter_sweep.py 
+q24_vanishing_gradient.py
+q28_error_analysis.py 
+best_config.json  
+best_model.npy  
 
-```bash
-python src/run_sweep.py
-```
+requirements.txt  
+README.md  
 
-## Project Structure
 
-```
-├── src/
-│   ├── ann/                    # Neural network components
-│   │   ├── __init__.py
-│   │   ├── activations.py      # Activation functions
-│   │   ├── neural_layer.py     # Dense layer implementation
-│   │   ├── neural_network.py   # Main network class
-│   │   ├── objective_functions.py  # Loss functions
-│   │   └── optimizers.py       # Optimization algorithms
-│   ├── utils/
-│   │   ├── __init__.py
-│   │   └── data_loader.py      # Data loading utilities
-│   ├── data_exploration.py     # W&B data visualization
-│   ├── inference.py           # Model evaluation
-│   ├── run_sweep.py          # Hyperparameter sweep
-│   └── train.py              # Training script
-├── models/                   # Saved models
-├── notebooks/               # Jupyter notebooks
-├── requirements.txt         # Dependencies
-└── README.md               # This file
-```
+# File Description
 
-## Requirements
+## activations.py
 
-- NumPy
-- Keras (for data loading only)
-- Matplotlib
-- Scikit-learn
-- Weights & Biases
+Implements activation functions and their derivatives:
 
-## Contact
+- ReLU
+- Sigmoid
+- Tanh
+- Softmax
 
-For questions or issues, please contact the teaching staff or post on the course forum.
 
----
+## neural_layer.py
 
-Good luck with your implementation!
+Implements a dense neural network layer including:
+
+- weight initialization
+- forward pass
+- backward pass
+- gradient storage
+
+## neural_network.py
+
+Defines the complete MLP network and manages:
+
+- network construction
+- forward propagation
+- backward propagation
+- evaluation
+- saving and loading models
+
+## objective_functions.py
+
+Implements loss functions:
+
+- Cross Entropy
+- Mean Squared Error (MSE)
+
+
+## optimizers.py
+
+Implements optimization algorithms:
+
+- SGD
+- Momentum
+- NAG
+- RMSProp
+
+
+## data_loader.py
+
+Loads and preprocesses datasets:
+
+- MNIST
+- Fashion-MNIST
+
+Also performs normalization and one-hot encoding.
+
+## train.py
+
+Main training script responsible for:
+
+- parsing command line arguments
+- loading dataset
+- training loop
+- logging metrics to W&B
+- validation and testing
+- saving best model
+
+
+## inference.py
+
+Loads a trained model and evaluates it on the dataset.  
+Outputs:
+
+- accuracy
+- precision
+- recall
+- F1 score
+- loss
+
+
+# Training
+
+Example command to train the model:
+
+python src/train.py -d mnist -e 10 -b 32 -lr 0.001 -o rmsprop -wd 0.0001 -nhl 2 -sz 128 128 -a relu -l cross_entropy -wi xavier
+
+
+# Command Line Arguments
+
+-d dataset (mnist or fashion_mnist)
+
+-e number of training epochs
+
+-b batch size
+
+-lr learning rate
+
+-o optimizer (sgd, momentum, nag, rmsprop)
+
+-wd weight decay for regularization
+
+-nhl number of hidden layers
+
+-sz hidden layer sizes
+
+-a activation function (relu, sigmoid, tanh)
+
+-l loss function (cross_entropy or mse)
+
+-wi weight initialization (random, xavier, zeros)
+
+
+# Inference
+
+To evaluate a saved model run:
+
+python src/inference.py --model_path src/src/best_model.npy -d mnist
+
+This prints:
+
+Accuracy  
+Precision  
+Recall  
+F1 Score  
+Loss  
+
+
+# Experiments Performed
+
+Several experiments were conducted as part of this assignment.
+
+
+# 2.1 Dataset Visualization
+
+Sample images from the dataset were visualized using W&B to understand class distribution and dataset structure.
+
+# 2.2 Hyperparameter Sweep
+
+A W&B sweep with **more than 100 runs** was performed exploring:
+
+- learning rates
+- optimizers
+- activation functions
+- hidden layer sizes
+- weight initialization methods
+
+Parallel coordinate plots were used to identify the most important hyperparameters.
+
+Best configuration found:
+
+Dataset: MNIST  
+Epochs: 10  
+Batch Size: 32  
+Learning Rate: 0.001  
+Optimizer: RMSProp  
+Hidden Layers: [128,128]  
+Activation: ReLU  
+Loss Function: Cross Entropy  
+
+Best Test Accuracy: **97.57%**
+
+# 2.3 Optimizer Comparison
+
+The following optimizers were compared:
+
+- SGD
+- Momentum
+- NAG
+- RMSProp
+
+All models used the same architecture:
+
+3 hidden layers  
+128 neurons per layer  
+ReLU activation
+
+RMSProp converged fastest during early training epochs.
+
+# 2.4 Vanishing Gradient Analysis
+
+Sigmoid and ReLU activation functions were compared using RMSProp.
+
+The gradient norm of the first hidden layer was logged during training.
+
+Observations:
+
+- Sigmoid networks suffered from vanishing gradients
+- ReLU maintained stronger gradient values
+
+
+# 2.5 Dead Neuron Investigation
+
+Using ReLU activation with a high learning rate caused some neurons to output zero for all inputs.
+
+These neurons stopped learning and became **dead neurons**.
+
+Using **Tanh activation** prevented this issue because neurons continued producing non-zero outputs.
+
+# 2.6 Loss Function Comparison
+
+Two loss functions were compared:
+
+- Mean Squared Error
+- Cross Entropy Loss
+
+Cross Entropy converged faster and achieved higher accuracy because it is better suited for classification tasks.
+
+# 2.7 Global Performance Analysis
+
+Training accuracy and test accuracy across runs were analyzed.
+
+Some models achieved high training accuracy but lower test accuracy, indicating **overfitting**.
+
+
+# 2.8 Error Analysis
+
+A confusion matrix was generated for the best performing model.
+
+Most digits were classified correctly.  
+Some misclassifications occurred between visually similar digits such as:
+
+- 4 and 9
+- 3 and 5
+
+Misclassified images were also visualized.
+
+# 2.9 Weight Initialization and Symmetry Breaking
+
+Two initialization strategies were compared:
+
+- Zero initialization
+- Xavier initialization
+
+Zero initialization caused identical gradients for all neurons.
+
+Xavier initialization broke symmetry and allowed neurons to learn different features.
+
+
+# 2.10 Fashion-MNIST Transfer Challenge
+
+Three configurations based on MNIST experiments were tested on Fashion-MNIST.
+
+Configuration 1
+
+Architecture: [128,128]  
+Optimizer: RMSProp  
+Activation: ReLU  
+
+Test Accuracy: **86.38%**
+
+Configuration 2
+
+Architecture: [128,128,128]  
+Optimizer: RMSProp  
+Activation: ReLU  
+
+Test Accuracy: **86.64%**
+
+Configuration 3
+
+Architecture: [128,128]  
+Optimizer: NAG  
+Activation: Tanh  
+
+Test Accuracy: **85.78%**
+
+The deeper architecture performed slightly better due to the increased complexity of Fashion-MNIST images.
+
+
+# Results
+
+MNIST Test Accuracy ≈ **97.5%**
+
+Fashion-MNIST Test Accuracy ≈ **86.6%**
+
+
+# Weights & Biases Report
+
+Full report available at:
+
+https://wandb.ai/ge26z814-iitm-india/da6401-assignment1/reports/Multi-Layer-Perceptron-for-Image-Classification--VmlldzoxNjEzMjU1MQ
+
+# Notes
+
+- Neural network implemented entirely using **NumPy**
+- No deep learning frameworks such as TensorFlow or PyTorch were used
+- Forward propagation, backward propagation, and optimizer updates were implemented manually
