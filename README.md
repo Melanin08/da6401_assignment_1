@@ -66,6 +66,9 @@ pip install -r requirements.txt
 
 # Project Structure
 
+# Project Structure
+
+```
 da6401_assignment_1/
 │
 ├── models/
@@ -100,7 +103,7 @@ da6401_assignment_1/
 │
 ├── requirements.txt
 └── README.md
-
+```
 # File Description
 
 ## activations.py
