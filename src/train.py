@@ -32,8 +32,8 @@ def parse_arguments():
     parser.add_argument("-wi", "-w_i", "--weight_init", type=str, default="xavier",
                         choices=["random", "xavier", "zeros"])
     parser.add_argument("--wandb_project", type=str, default="da6401-assignment1")
-    parser.add_argument("--model_save_path", type=str, default="src/best_model.npy")
-    parser.add_argument("--config_save_path", type=str, default="src/best_config.json")
+    parser.add_argument("--model_save_path", type=str, default="outputs/temp_model.npy")
+    parser.add_argument("--config_save_path", type=str, default="outputs/temp_config.json")
     parser.add_argument("--seed", type=int, default=42)
 
     return parser.parse_args()
