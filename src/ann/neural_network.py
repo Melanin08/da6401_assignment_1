@@ -24,7 +24,7 @@ class NeuralNetwork:
     """
 
     def __init__(self, cli_args):
-        self.dataset = getattr(cli_args, "dataset", "mnist")
+        self.dataset = getattr(cli_args, "dataset", None) or "mnist"
         self.input_size = 784
         self.output_size = 10
 
@@ -38,13 +38,13 @@ class NeuralNetwork:
         else:
             self.hidden_layers = [128, 128]
 
-        self.activation_name = getattr(cli_args, "activation", "relu")
-        self.loss_name = get_loss(getattr(cli_args, "loss", "cross_entropy"))
-        self.weight_init = getattr(cli_args, "weight_init", "xavier")
+        self.activation_name = getattr(cli_args, "activation", None) or "relu"
+        self.loss_name = get_loss(getattr(cli_args, "loss", None) or "cross_entropy")
+        self.weight_init = getattr(cli_args, "weight_init", None) or "xavier"
 
         self.learning_rate = getattr(cli_args, "learning_rate", 0.001)
         self.weight_decay = getattr(cli_args, "weight_decay", 0.0)
-        self.optimizer_name = getattr(cli_args, "optimizer", "sgd")
+        self.optimizer_name = getattr(cli_args, "optimizer", None) or "sgd"
 
         self.layers = []
         prev_size = self.input_size
@@ -61,7 +61,9 @@ class NeuralNetwork:
 
         if self.weight_init == "xavier":
             limit = np.sqrt(6.0 / (prev_size + self.output_size))
-            self.output_W = np.random.uniform(-limit, limit, (prev_size, self.output_size)).astype(np.float64)
+            self.output_W = np.random.uniform(
+                -limit, limit, (prev_size, self.output_size)
+            ).astype(np.float64)
         elif self.weight_init == "random":
             self.output_W = (0.01 * np.random.randn(prev_size, self.output_size)).astype(np.float64)
         elif self.weight_init == "zeros":
@@ -251,15 +253,15 @@ class NeuralNetwork:
             pass
 
         args = Args()
-        args.dataset = config["dataset"]
-        args.hidden_size = config["hidden_layers"]
-        args.activation = config["activation"]
-        args.loss = config["loss"]
-        args.weight_init = config["weight_init"]
-        args.optimizer = config["optimizer"]
-        args.learning_rate = config["learning_rate"]
-        args.weight_decay = config["weight_decay"]
+        args.dataset = config.get("dataset", "mnist")
+        args.hidden_size = config.get("hidden_layers", [128, 128])
+        args.activation = config.get("activation", "relu")
+        args.loss = config.get("loss", "cross_entropy")
+        args.weight_init = config.get("weight_init", "xavier")
+        args.optimizer = config.get("optimizer", "sgd")
+        args.learning_rate = config.get("learning_rate", 0.001)
+        args.weight_decay = config.get("weight_decay", 0.0)
 
         model = cls(args)
         model.set_weights(payload["weights"])
-        return model
+        return modelv
