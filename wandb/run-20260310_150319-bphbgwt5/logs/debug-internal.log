@@ -1,0 +1,26 @@
+{"time":"2026-03-10T15:03:22.923318+05:30","level":"INFO","msg":"stream: starting","core version":"0.25.0"}
+{"time":"2026-03-10T15:03:24.1568402+05:30","level":"INFO","msg":"stream: created new stream","id":"bphbgwt5"}
+{"time":"2026-03-10T15:03:24.1568402+05:30","level":"INFO","msg":"handler: started","stream_id":"bphbgwt5"}
+{"time":"2026-03-10T15:03:24.1573951+05:30","level":"INFO","msg":"stream: started","id":"bphbgwt5"}
+{"time":"2026-03-10T15:03:24.1585739+05:30","level":"INFO","msg":"writer: started","stream_id":"bphbgwt5"}
+{"time":"2026-03-10T15:03:24.1585739+05:30","level":"INFO","msg":"sender: started","stream_id":"bphbgwt5"}
+{"time":"2026-03-10T15:04:00.5023608+05:30","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":1}
+{"time":"2026-03-10T15:04:00.5165832+05:30","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":68425}
+{"time":"2026-03-10T15:04:00.5180384+05:30","level":"INFO","msg":"flowcontrol: backed up, offloading to disk","recordNumber":68574}
+{"time":"2026-03-10T15:04:00.5190465+05:30","level":"INFO","msg":"flowcontrol: unblocked","totalOffloaded":51}
+{"time":"2026-03-10T15:05:34.5758953+05:30","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/files/ge26z814-iitm-india/da6401-assignment1/bphbgwt5/file_stream","body":"{\"error\":\"context deadline exceeded\"}"}
+{"time":"2026-03-10T15:06:22.6436998+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2026-03-10T15:07:25.2966686+05:30","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/files/ge26z814-iitm-india/da6401-assignment1/bphbgwt5/file_stream","body":"{\"error\":\"context deadline exceeded\"}"}
+{"time":"2026-03-10T15:09:26.980427+05:30","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/files/ge26z814-iitm-india/da6401-assignment1/bphbgwt5/file_stream","body":"{\"error\":\"context deadline exceeded\"}"}
+{"time":"2026-03-10T15:11:30.7762859+05:30","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/files/ge26z814-iitm-india/da6401-assignment1/bphbgwt5/file_stream","body":"{\"error\":\"context deadline exceeded\"}"}
+{"time":"2026-03-10T15:13:37.7775183+05:30","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/files/ge26z814-iitm-india/da6401-assignment1/bphbgwt5/file_stream","body":"{\"error\":\"context deadline exceeded\"}"}
+{"time":"2026-03-10T15:17:12.3750764+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/ge26z814-iitm-india/da6401-assignment1/bphbgwt5/file_stream\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2026-03-10T15:19:14.1578826+05:30","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/files/ge26z814-iitm-india/da6401-assignment1/bphbgwt5/file_stream","body":"{\"error\":\"context deadline exceeded\"}"}
+{"time":"2026-03-10T15:22:28.9405199+05:30","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/files/ge26z814-iitm-india/da6401-assignment1/bphbgwt5/file_stream","body":"{\"error\":\"context deadline exceeded\"}"}
+{"time":"2026-03-10T15:25:31.4541354+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/ge26z814-iitm-india/da6401-assignment1/bphbgwt5/file_stream\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2026-03-10T15:27:59.3561123+05:30","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/files/ge26z814-iitm-india/da6401-assignment1/bphbgwt5/file_stream","body":"{\"error\":\"context deadline exceeded\"}"}
+{"time":"2026-03-10T15:28:40.410196+05:30","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2026-03-10T15:28:40.5247791+05:30","level":"INFO","msg":"stream: closing","id":"bphbgwt5"}
+{"time":"2026-03-10T15:28:40.5247791+05:30","level":"INFO","msg":"handler: closed","stream_id":"bphbgwt5"}
+{"time":"2026-03-10T15:28:40.5263658+05:30","level":"INFO","msg":"sender: closed","stream_id":"bphbgwt5"}
+{"time":"2026-03-10T15:28:40.5263658+05:30","level":"INFO","msg":"stream: closed","id":"bphbgwt5"}
