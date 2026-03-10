@@ -103,10 +103,6 @@ da6401_assignment_1/
 ├── requirements.txt
 └── README.md
 ```
-<<<<<<< HEAD
-
-=======
->>>>>>> 0d5519b525ef9163cb4ce05ce3af1722ad85a241
 # File Description
 
 ## activations.py
@@ -192,9 +188,9 @@ Outputs:
 # Training
 
 Example command to train the model:
-
+```
 python src/train.py -d mnist -e 10 -b 32 -lr 0.001 -o rmsprop -wd 0.0001 -nhl 2 -sz 128 128 -a relu -l cross_entropy -wi xavier
-
+```
 
 # Command Line Arguments
 
