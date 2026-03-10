@@ -264,4 +264,4 @@ class NeuralNetwork:
 
         model = cls(args)
         model.set_weights(payload["weights"])
-        return modelv
+        return model
