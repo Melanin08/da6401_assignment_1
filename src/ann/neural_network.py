@@ -28,10 +28,13 @@ class NeuralNetwork:
         self.input_size = 784
         self.output_size = 10
 
-        if hasattr(cli_args, "hidden_size"):
-            self.hidden_layers = list(cli_args.hidden_size)
-        elif hasattr(cli_args, "hidden_layers"):
-            self.hidden_layers = list(cli_args.hidden_layers)
+        hidden_size = getattr(cli_args, "hidden_size", None)
+        hidden_layers = getattr(cli_args, "hidden_layers", None)
+
+        if hidden_size is not None:
+            self.hidden_layers = list(hidden_size)
+        elif hidden_layers is not None:
+            self.hidden_layers = list(hidden_layers)
         else:
             self.hidden_layers = [128, 128]
 
